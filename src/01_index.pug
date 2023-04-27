@@ -1,0 +1,147 @@
+- var pageTitle = 'Главная страница'
+- var seoKeywords = 'Ключевые слова для страницы'
+- var seoDesc = 'Сео описание для страницы'
+
+include __const
+include __header
+include __footer
+include __form
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+  .site__header
+    +header
+  .site__center
+    .topRek__area
+      .topRek
+        .topRek__text
+          span Бухгалтерское сопровождение малого бизнеса
+        .z1__btn.js__btn Оставить заявку
+        .topRek__formArea
+          .form1__outer
+            .form1__title
+              | Оставьте заявку и мы свяжемся с Вами
+            form.form1(action='#')
+              input.name1(name='name1' type='text' placeholder='Ваше имя')
+              input.phone1(name='phone1' type='text' placeholder='Контактный телефон')
+              input.email1(name='email1' type='text' placeholder='Email')
+              input.work_email1(name='work_email1' type='text' placeholder='Рабочий email')
+              textarea.message1(name='message1' cols='30' rows='10' placeholder='Ваше сообщение')
+              .form1__text
+                | *Отправляя сообщение Вы соглашаетесь с условиями 
+                a(href='privacy-policy/')
+                  | политики
+                  | конфиденциальности
+              button.submit1(type='submit' name='submit1')
+                | Оставить заявку
+    .service__area
+      .service__outer
+        .service__title
+          | Наши услуги
+        .service
+          .service__itemOuter
+            a.service__item(href='#' style='background-image: url(assets/img/serv/01.jpg);')
+              img(src='assets/img/300png.png' alt='1')
+              span Бухгалтерское обслуживание
+          .service__itemOuter
+            a.service__item(href='#' style='background-image: url(assets/img/serv/04.jpg);')
+              img(src='assets/img/300png.png' alt='1')
+              span Нулевая отчетность
+          .service__itemOuter
+            a.service__item(href='#' style='background-image: url(assets/img/serv/03.jpg);')
+              img(src='assets/img/300png.png' alt='1')
+              span Персонифицированный учет и 2-НДФЛ
+          .service__itemOuter
+            a.service__item(href='#' style='background-image: url(assets/img/serv/02.jpg);')
+              img(src='assets/img/300png.png' alt='1')
+              span Кадровое делопроизводство
+    .text__area
+      .text__outer
+        .title
+          h1 О нашей компании
+        .content
+          p
+            | Малый бизнес постепенно осознает, что приходящий бухгалтер или частный бухгалтер на дому - наименее
+            | затратный способ ведения бухгалтерии. Организации, которые только стоят на пороге своего развития
+            | или имеют сравнительно небольшие объемы оборотов, ограничиваются содержанием тесного коллектива, в
+            | который идеально вписывается приходящий бухгалтер или удаленный бухгалтер на дому.
+          p
+            | Главная причина, по которой бизнесмены за бухгалтерскими услугами обращаются к частным специалистам,
+            | - экономия, поскольку если доходы фирмы и объем документации невелики, то платить за бухгалтерское
+            | обслуживание приходящему бухгалтеру оказывается дешевле, чем содержать собственную бухгалтерию. Из
+            | этого следует, что привлечение главного бухгалтера по совместительсту, позволяет избежать таких
+            | затрат как: подбор кадров для ведения бухгалтерского учета фирмы, расширение помещения, закупка
+            | дополнительной техники, программного обеспечения, литературы, обновление программ, нет необходимости
+            | тратить деньги наповышение квалификации бухгалтера.
+    .preim__area
+      .preim__outer
+        .title
+          h2 Наши преимущества
+        .preim
+          .preim__item
+            i.fa.fa-calendar(aria-hidden='true')
+            span Точные сроки
+          .preim__item
+            i.fa.fa-bar-chart(aria-hidden='true')
+            span Прозрачность и контроллируемость
+          .preim__item
+            i.fa.fa-rub(aria-hidden='true')
+            span Гибкая ценовая политика
+          .preim__item
+            i.fa.fa-check-square-o(aria-hidden='true')
+            span Строгое соответствие нормам
+          .preim__item
+            i.fa.fa-users(aria-hidden='true')
+            span Квалифицированные специалисты
+          .preim__item
+            i.fa.fa-shield(aria-hidden='true')
+            span Работа по договору
+    .mainBlock__area
+      .mainBlock
+        .mainNews__area
+          .title
+            h3 Новости
+          .news
+            .news__item
+              .news__itemTop
+                i.fa.fa-newspaper-o(aria-hidden='true')
+                span 05.06.17
+              a(href='#')
+                | Запущен в эксплуатацию участок газораспределительной системы в поселке Новая Волга
+                | энгельсского
+                | района.
+            .news__item
+              .news__itemTop
+                i.fa.fa-newspaper-o(aria-hidden='true')
+                span 05.06.17
+              a(href='#')
+                | Проведена комплексная газификация района Новые Каменки Одинцовского района.
+            .news__item
+              .news__itemTop
+                i.fa.fa-newspaper-o(aria-hidden='true')
+                span 05.06.17
+              a(href='#')
+                | Сотрудники нашей компании прошли переаттестацию по техническому регламенту 2017
+            a.news__redmore(href='#') Все новости...
+        .mainForm__area
+          .title
+            h3 Обратная связь
+          +form1
+    .map__area
+      #map
+  .site__footer
+    +footer
+  
+  +toTop
+  +popUpForm
+
+  +scripts
+
+
+
+    

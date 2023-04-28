@@ -354,20 +354,6 @@ $(function () {
       );
     }
   });
-
-  $('#instafeed').length
-    ? ((a = new Instafeed({
-        get: 'user',
-        userId: 3265735555,
-        clientId: 'e39c33b06d5b4d4b9890b8dcb5179542',
-        accessToken: '3265735555.e39c33b.b040613c696d4973a5a6424307388fee',
-        limit: 12,
-        resolution: 'low_resolution',
-        template:
-          '<div class="ig__item"><a class="ig__link" href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}"/></a></div>',
-      })),
-      a.run())
-    : void 0;
 });
 
 var isMobile = {
@@ -402,7 +388,7 @@ if ($('.map__area').length) {
 
   function init() {
     var myMap = new ymaps.Map('map', {
-      center: [51.53636907237114, 46.022191999999926],
+      center: [51.53110857238589, 46.04663549999995],
       zoom: 16,
       controls: ['zoomControl'],
     });
@@ -415,24 +401,22 @@ if ($('.map__area').length) {
     var myGeoObjects = [];
 
     myGeoObjects[0] = new ymaps.Placemark(
-      [51.53636907237114, 46.022191999999926],
+      [51.53110857238589, 46.04663549999995],
       {
         balloonContentHeader:
-          '<div class="baloon__top">Бьюти Лаунж</div>' +
-          '<div class="baloon__description">Клиника красоты</div>',
+          '<div class="baloon__top">Юристы</div>' +
+          '<div class="baloon__description">По трудовому праву</div>',
         balloonContentBody:
-          '<div class="baloon__content"><img src="/btlassets/img/logo-1-534764.svg">' +
-          '<a href="tel:88452650500">8 (8452) 650-500</a>',
+          // '<div class="baloon__content"><img src="/btlassets/img/logo-1-534764.svg">' +
+          '<a href="tel:+79053804464">+7 (905) 380 4464</a>',
         balloonContentFooter:
-          '<div class="baloon__footer">Саратов, ул. Московская, 113/117, <br>ТК «Мир», 2 этаж.</div>',
-        clusterCaption:
-          'Косметология<br>салон массажа<br>HAIR услуги<br>NAIL-BAR<br>профессиональная косметика',
-        hintContent:
-          '<div class="baloon__top">Клиника красоты "Бьюти Лаунж"</div>',
+          '<div class="baloon__footer">Саратов, Октябрьская 44 оф. 4</div>',
+        clusterCaption: '',
+        hintContent: '<div class="baloon__top">Юристы по трудовому праву</div>',
       },
       {
         iconLayout: 'default#image',
-        iconImageHref: 'assets/img/marker.png',
+        iconImageHref: 'assets/img/marker3.png',
         iconImageSize: [30, 48],
         iconImageOffset: [-15, -48],
       }

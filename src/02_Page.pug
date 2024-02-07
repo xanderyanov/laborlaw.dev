@@ -6,6 +6,7 @@ include __const
 include __header
 include __footer
 include __form
+include __pdfList
 
 
 
@@ -171,7 +172,10 @@ body
                   td Строка 3 столбец 1
                   td Строка 3 столбец 2
                   td Строка 3 столбец 3
-          .zBtn.js__btn Оставить заявку
+          //- .zBtn.js__btn Оставить заявку
+
+          +pdfList
+          +gallery
 
 
 

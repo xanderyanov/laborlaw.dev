@@ -171,18 +171,20 @@ $(function () {
       setTimeout(function () {
         $('.email1').removeClass('error');
       }, 3000);
-    } else if (message == '') {
-      swal({
-        title: 'Пустое сообщение',
-        text: 'Заполните текст сообщения',
-        type: 'error',
-        confirmButtonText: 'ок',
-      });
-      $('.message1').addClass('error');
-      setTimeout(function () {
-        $('.message1').removeClass('error');
-      }, 3000);
-    } else if (workemail != '') {
+    } 
+    // else if (message == '') {
+    //   swal({
+    //     title: 'Пустое сообщение',
+    //     text: 'Заполните текст сообщения',
+    //     type: 'error',
+    //     confirmButtonText: 'ок',
+    //   });
+    //   $('.message1').addClass('error');
+    //   setTimeout(function () {
+    //     $('.message1').removeClass('error');
+    //   }, 3000);
+    // } 
+    else if (workemail != '') {
       swal({
         title: 'Ах ты жулик',
         text: 'Уберите робота от компьютера',
